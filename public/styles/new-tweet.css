@@ -1,0 +1,89 @@
+.new-tweet {
+border-radius: 5px;
+border : 1px black solid;
+margin: 0 2em 0 2em;
+padding: 10px;
+height: 130px;
+}
+.new-tweet h2 {
+  border: 1px solid black;
+  border-width: 0 0 1px 0;
+  margin: 0;
+  text-align: left;
+}
+
+.new-tweet form textarea {
+  resize: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.new-tweet form input {
+  float: left;
+
+}
+
+.new-tweet form .counter {
+  float: right;
+  padding-top: 10px;
+
+}
+
+
+#tweets-container header {
+  background-color: grey;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  border-style: solid;
+  border-bottom: thick grey;
+  border-radius: 5px;
+}
+
+#tweets-container article {
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  border-radius: 5px;
+  border: double grey;
+
+
+}
+
+#tweets-container article main {
+  min-height: 80px;
+}
+
+#tweets-container article header #a {
+  float: right;
+}
+
+#tweets-container article header #full {
+  float: left;
+}
+
+
+#tweets-container footer {
+  background-color: white;
+  height: 30px;
+  width: 100%;
+  position: relative;
+  border-style: solid;
+  border-top: double grey;
+  border-radius: 5px;
+}
+
+#tweets-container footer ul {
+  list-style: none;
+  visibility: hidden;
+  float: right;
+}
+
+#tweets-container article:hover ul {
+  visibility: visible;
+}
+
+#tweets-container footer ul li {
+  display: inline;
+}

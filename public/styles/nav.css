@@ -1,0 +1,36 @@
+#nav-bar{
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #00a087;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  color: #e8fdff;
+  padding-left:2em;
+  padding-right:2em;
+  padding-bottom:0em;
+  padding-top:0em;
+  float : left;
+  height: 80px;
+}
+
+#btn{
+  float: right;
+  margin-top: 6px;
+
+}
+
+#btn #he:hover{
+  color: #e8fdff;
+}
+
+.logo{
+  width: 80px;
+  height: 80px;
+}
+
+.header{
+  font-size: 2em;
+  padding-left: 10px;
+  line-height: 75px;
+  position: absolute;
+}
