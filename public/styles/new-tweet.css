@@ -1,9 +1,17 @@
+.container {
+  background-color: skyblue;
+}
+
+
+
 .new-tweet {
 border-radius: 5px;
 border : 1px black solid;
 margin: 0 2em 0 2em;
 padding: 10px;
-height: 130px;
+height: 150px;
+background-color: skyblue;
+display: none;
 }
 .new-tweet h2 {
   border: 1px solid black;
@@ -40,7 +48,12 @@ height: 130px;
   border-radius: 5px;
 }
 
+#tweets-container img {
+  float: left;
+}
+
 #tweets-container article {
+  margin-top: 10px;
   background-color: white;
   margin-left: 30px;
   margin-right: 30px;
@@ -57,10 +70,13 @@ height: 130px;
 
 #tweets-container article header #a {
   float: right;
+  text-decoration: underline;
 }
 
 #tweets-container article header #full {
   float: left;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 
@@ -74,16 +90,26 @@ height: 130px;
   border-radius: 5px;
 }
 
+#tweets-container footer p {
+    text-align: left;
+    margin: 0;
+}
+
 #tweets-container footer ul {
   list-style: none;
   visibility: hidden;
   float: right;
+  margin: 0;
 }
 
 #tweets-container article:hover ul {
   visibility: visible;
+      position: relative;
+    bottom: 15px;
+    right: 10px;
 }
 
 #tweets-container footer ul li {
+  margin: 0;
   display: inline;
 }

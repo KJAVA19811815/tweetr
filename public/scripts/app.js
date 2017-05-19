@@ -75,7 +75,7 @@ $(document).ready(function() {
  function createTweetElement(tweet) {
   let $article = `<article>
     <header>
-      <img src="">
+      <img src="${tweet.user.avatars.small}">
       <p id="a">${tweet.user.handle}</p>
 
       <p id="full">${tweet.user.name}</p>
@@ -86,6 +86,7 @@ $(document).ready(function() {
       <p>${tweet.content.text}</p>
    </main>
     <footer id="foot">
+    <p>${(Date.now()-tweet.created_at)/(60*60*24)}</p>
       <ul>
         <li><i class="fa fa-flag" aria-hidden="true"></i></li>
         <li><i class="fa fa-heart" aria-hidden="true"></i></li>
