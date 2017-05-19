@@ -38,12 +38,6 @@ $(document).ready(function() {
     }
   };
 
-  $("#register").click(function() {
-  });
-
-  $("#login").click(function() {
-  });
-
   $( "#btn" ).click(function() {
     $('.new-tweet').slideToggle( "fast", function() {
       // Animation complete.
