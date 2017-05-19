@@ -4,13 +4,45 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  color: #e8fdff;
   padding-left:2em;
   padding-right:2em;
   padding-bottom:0em;
   padding-top:0em;
   float : left;
   height: 80px;
+}
+
+#register{
+  float: right;
+  margin-right: 40px;
+  margin-top: 9px;
+}
+
+#login{
+  float: right;
+  margin-right: 40px;
+  margin-top: 9px;
+
+}
+
+#form1 {
+
+  margin-top: 75px;
+  text-align: center;
+  position: absolute;
+  display: inline;
+  display: none;
+  float: right;
+}
+
+#form2 {
+  margin-top: 75px;
+  text-align: center;
+  position: absolute;
+  display: inline;
+  display: none;
+
+
 }
 
 #btn{

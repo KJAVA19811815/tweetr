@@ -43,4 +43,8 @@ module.exports = function(DataHelpers) {
 
   return tweetsRoutes;
 
+  app.post("/register", function(req, res) {
+    res.redirect("/register");
+
+  });
 }

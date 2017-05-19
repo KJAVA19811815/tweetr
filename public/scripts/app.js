@@ -8,17 +8,56 @@
 
 $(document).ready(function() {
 
+  function createdAt(time) {
+    var system_date = new Date(time);
+    var user_date = new Date();
+    console.log(time);
+    //if (K.ie) {
+      //  system_date = Date.parse(tdate.replace(/( \+)/, ' UTC$1'))
+    //}
+    var diff = Math.floor((user_date - system_date) / 1000);
+    if (diff <= 1) {return "just now";}
+    if (diff < 20) {return diff + " seconds ago";}
+    if (diff < 60) {return "less than a minute ago";}
+    if (diff <= 3540) {return Math.round(diff / 60) + " minutes ago";}
+    if (diff <= 5400) {return "1 hour ago";}
+    if (diff <= 86400) {return Math.round(diff / 3600) + " hours ago";}
+    if (diff <= 129600) {return "1 day ago";}
+    if (diff < 604800) {return Math.round(diff / 86400) + " days ago";}
+    if (diff <= 777600) {return "1 week ago";}
+    return "on " + system_date;
+}
+
   function renderTweets(tweets) {
     var twe = $('#tweets-container');
     var html = "";
+    twe.empty()
     for(var i of tweets) {
       var crt = createTweetElement(i);
       twe.append(crt);
     }
   };
 
+  $("#register").click(function() {
+  });
+
+  $("#login").click(function() {
+  });
+
   $( "#btn" ).click(function() {
     $('.new-tweet').slideToggle( "fast", function() {
+      // Animation complete.
+    });
+  });
+
+  $( "#register" ).click(function() {
+    $('#form1').slideToggle( "fast", function() {
+      // Animation complete.
+    });
+  });
+
+  $( "#login" ).click(function() {
+    $('#form2').slideToggle( "fast", function() {
       // Animation complete.
     });
   });
@@ -50,7 +89,6 @@ $(document).ready(function() {
       alert("there is a problem")
       return;
     }
-
 
     // var $form = $(this).serialize();
     console.log($form);
@@ -86,7 +124,7 @@ $(document).ready(function() {
       <p>${tweet.content.text}</p>
    </main>
     <footer id="foot">
-    <p>${(Date.now()-tweet.created_at)/(60*60*24)}</p>
+    <p>${createdAt(tweet.created_at)}</p>
       <ul>
         <li><i class="fa fa-flag" aria-hidden="true"></i></li>
         <li><i class="fa fa-heart" aria-hidden="true"></i></li>
