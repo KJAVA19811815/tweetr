@@ -15,3 +15,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of compose box"](https://github.com/KJAVA19811815/tweetr/blob/master/docs/composetweet.png)
+!["Screenshot of list of tweets"](https://github.com/KJAVA19811815/tweetr/blob/master/docs/listoftweets.png)
+
+
+
+
